@@ -15,7 +15,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'gs-securing-web'
+    baseName = 'demo-web'
     version =  '0.1.0'
 }
 
@@ -29,6 +29,7 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile('org.codehaus.groovy:groovy')
     // tag::security[]
     compile("org.springframework.boot:spring-boot-starter-security")
