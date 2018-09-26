@@ -1,9 +1,9 @@
 # Spring Demo
 
 ### Prerequisite:
-- Gradle: Build tool
-- MongoDB: Car repository
-- Spring Boot: allows minimum configurations
+- *Gradle*: Build tool
+- *MongoDB*: Car repository
+- *Spring Boot*: allows minimum configurations
 
 ### Build and run:
 ```
