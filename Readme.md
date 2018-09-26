@@ -26,3 +26,19 @@ Enter user and password to login. After that, you will be on the welcome page wh
 ### Security
 Spring also supports OAuth2 authentication. I was able to login with Google authentication but it requires Spring SNAPSHOT build 5.1.0 which might have some dependency issues working with its RELEASE version 5.0.8.
 The screenshots can be found at [./screenshot](./screenshot).
+
+The following controller code does the OAuth2 authentication:
+```
+@Controller
+public class OAuth2LoginController {
+	@GetMapping("/")
+	public String index(Model model,
+						@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient,
+						@AuthenticationPrincipal OAuth2User oauth2User) {
+		model.addAttribute("userName", oauth2User.getName());
+		model.addAttribute("clientName", authorizedClient.getClientRegistration().getClientName());
+		model.addAttribute("userAttributes", oauth2User.getAttributes());
+		return "index";
+	}
+}
+```
