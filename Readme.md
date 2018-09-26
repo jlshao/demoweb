@@ -23,7 +23,8 @@ Enter user and password to login. After that, you will be on the welcome page wh
 - RESTful services
   
 
-### Security
+### Web Security
+This site is protected by the simple form login.
 Spring also supports OAuth2 authentication. I was able to login with Google authentication but it requires Spring SNAPSHOT build 5.1.0 which might have some dependency issues working with its RELEASE version 5.0.8.
 This is the screenshot after successful login: ![./screenshot](./screenshot/OAuth03.png).
 
