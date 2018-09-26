@@ -21,7 +21,17 @@ Two users have been configured:
 Enter user and password to login. After that, you will be on the welcome page which gives two methods to access our "Car Inventory" data:
 - CRUD web pages
 - RESTful services
-  
+
+### CRUD web pages
+
+These Spring MVC pages support basic CRUD operations:
+![CRUD Pages](/screenshot/DemoMvc.png)
+
+### RESTful services
+
+These REST APIs also provide basic CRUD services:
+![CRUD APIs](/screenshot/DemoApi.png)
+
 
 ### Web Security
 This site is protected by the simple form login.

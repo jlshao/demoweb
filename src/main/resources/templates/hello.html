@@ -15,8 +15,9 @@
 </head>
 <body>
 	<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
-	<div class="form-group">
-		<a href="/api/cars">Check out our car inventory API.</a> <br />
+	<div  class="form-control">
+		<a href="/cars/list">Enter car inventory page.</a> <br />
+		<a href="/api/cars">API showcase</a> <br />
 		<form th:action="@{/logout}" method="post">
 			<input type="submit" value="Sign Out" />
 		</form>
